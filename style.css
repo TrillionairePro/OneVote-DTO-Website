@@ -1,4 +1,161 @@
+@import url(https://fonts.googleapis.com/css?family=Inter);
+
+main {
+  width: 1920px;
+}
+
 html {
+  font-family: 'Inter';
+  width: 1920px;
+}
+
+div.header {
+  width: 1920px;
+  height: 300px;
+  background-image: linear-gradient(to right, #4465AC, #1B2946);
+}
+
+div.page-header {
+  width: 1920px;
+  height: 100px;
+  background-color: #4465AC;
+  margin-top: -33px;
+}
+
+.section-1 {
+  width: 640px;
+  height: 680px;
+  margin-top: -40px;
+  background-image: url('2024 US Presidential Election Ballot.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section-2 {
+  width: 640px;
+  height: 680px;
+  margin-top: -720px;
+  margin-left: 640px;
+  background-image: url('Australian Senate STV Ballot.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.image-overlay {
+  width: 640px;
+  height: 680px;
+  background: linear-gradient(to right, rgba(22, 43, 88, 0.75), rgba(147, 147, 147, 0.75));
+}
+
+.section-3 {
+  width: 640px;
+  height: 680px;
+  margin-top: -720px;
+  margin-left: 1280px;
+  background-image: url('New Zealand MMP Ballot.png');
+  background-size: cover;
+  background-repeat: no-repeat
+}
+
+h2 {
+  color: white;
+  font-size: 48px;
+  text-align: center;
+  padding-top: 320px;
+  padding-bottom: 320px;
+}
+
+
+h1.logo {
+  color: white;
+  font-size: 32px;
+  padding-left: 75px;
+  padding-top: 20px;
+  padding-bottom: -20px;
+  margin-top: -83px;
+  margin-left: 20px;
+}
+
+h2.systems {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+img.img1 {
+  width: 449px;
+  height: 300px;
+  padding-left: 735px;
+  margin-top: -90px;
+}
+
+img.img2 {
+  width: 640px;
+  height: 680px;
+}
+
+.openbtn {
+  background-color: rgba(68 ,101 ,172, 0);
+  color: white;
+  padding: 20px 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+div.section-1:hover {
+  cursor: pointer;
+  margin-top: -40px;
+  box-shadow: inset 10px 10px 10px rgba(0, 0, 0);
+}
+
+div.section-2:hover {
+  cursor: pointer;
+  box-shadow: inset 10px 10px 10px rgba(0, 0, 0);
+}
+
+div.section-3:hover {
+  cursor: pointer;
+  box-shadow: inset 10px 10px 10px rgba(0, 0, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  background: #4465AC;
+  width: 300px;
   height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+}
+
+.sidebar .menu {
   width: 100%;
+  margin-top: 80px;
+}
+
+.sidebar .menu .item {
+  position: relative;
+  cursor: pointer;
+}
+
+.sidebar .menu .item .NavLinks {
+  color: #ffffff;
+  background: #2D4A87;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 5px;
 }

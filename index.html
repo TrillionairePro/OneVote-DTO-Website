@@ -1,16 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta chartset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OneVote</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  Hello world
-  <script src="script.js"></script>
-</body>
 
+  <div class="sidebar">
+    <div class="menu">
+      <div class=item><a href="#" class="NavLinks">Home</a></div>
+      <div class=item><a href="#" class="NavLinks">One Choice</a></div>
+      <div class=item><a href="#" class="NavLinks">Ranked</a></div>
+      <div class=item><a href="#" class="NavLinks">Mixed</a></div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+  
+  
+  <main>
+    <div id="main" class="header">
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
+      <h1 class=logo>OneVote</h1>
+      <img class="img1" src="MIT-Polarization-Models-01-press-removebg-preview (1) (1).png" alt="Ballot-Box">
+    </div>
+    
+    <div class="content">
+      <div class="page-header">
+        <h2 class=systems>Voting Systems</h2>
+      </div>
+    
+      <div class="section-1">
+        <a href="one-choice.html">
+          <div class="image-overlay">
+            <h2 class=choice-1>One Choice</h2>
+          </div>
+        </a>
+      </div>
+    
+      <div class="section-2">
+        <a href="ranked.html">
+          <div class="image-overlay">
+            <h2 class=choice-2>Ranked</h2>
+          </div>
+        </a>
+      </div>
+
+      <div class="section-3">
+        <a href="mixed.html">
+          <div class="image-overlay">
+            <h2 class=choice-3>Mixed</h2>
+          </div>
+        </a>
+      </div>
+    </div>
+    </main>
+  
+</body>
 </html>
