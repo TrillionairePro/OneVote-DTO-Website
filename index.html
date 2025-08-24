@@ -10,83 +10,20 @@
 </head>
 
 <body>
-
-  <div id="mySidebar" class="sidebar">
-    <button class="closebtn" onclick="closeNav()">&times;</button>
-    
-    <div class="search-container">
-      <input type="text" placeholder="Search" class="search-bar">
-      <span class="search-icon">&#128269;</span>
+  <nav>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#" class="NavLinks">Home</a>
+      <a href="#" class="NavLinks">One Choice</a>
+      <a href="#" class="NavLinks">Ranked</a>
+      <a href="#" class="NavLinks">Mixed</a>
     </div>
-    
-    <div class="menu">
-      <div class="item">
-        <a href="#" class="nav-link">
-          <span class="nav-icon">&#127968;</span>
-          <span class="nav-text">Home</span>
-        </a>
-      </div>
-      
-      <div class="item dropdown">
-        <a href="#" class="nav-link dropdown-toggle" onclick="toggleDropdown('oneChoiceDropdown')">
-          <span class="nav-icon">&#9650;</span>
-          <span class="nav-text">One Choice</span>
-          <span class="dropdown-arrow">&#9650;</span>
-        </a>
-        <div id="oneChoiceDropdown" class="dropdown-content">
-          <a href="one-choice.html">What is it?</a>
-          <a href="#">How to Vote?</a>
-        </div>
-      </div>
-      
-      <div class="item dropdown">
-        <a href="#" class="nav-link dropdown-toggle" onclick="toggleDropdown('rankedDropdown')">
-          <span class="nav-icon">&#9660;</span>
-          <span class="nav-text">Ranked</span>
-          <span class="dropdown-arrow">&#9660;</span>
-        </a>
-        <div id="rankedDropdown" class="dropdown-content">
-          <a href="ranked.html">About Ranked Voting</a>
-          <a href="#">Examples</a>
-        </div>
-      </div>
-
-      <div class="item dropdown">
-        <a href="#" class="nav-link dropdown-toggle" onclick="toggleDropdown('mixedDropdown')">
-          <span class="nav-icon">&#9660;</span>
-          <span class="nav-text">Mixed</span>
-          <span class="dropdown-arrow">&#9660;</span>
-        </a>
-        <div id="mixedDropdown" class="dropdown-content">
-          <a href="mixed.html">Mixed Systems</a>
-          <a href="#">Case Studies</a>
-        </div>
-      </div>
-    </div>
-    
-    <div class="language-switcher">
-      <div class="item dropdown">
-        <a href="#" class="nav-link dropdown-toggle" onclick="toggleDropdown('languageDropdown')">
-          <span class="flag">&#127482;&#127480;</span>
-          <span class="nav-text">English</span>
-          <span class="dropdown-arrow">&#9650;</span>
-        </a>
-        <div id="languageDropdown" class="dropdown-content">
-          <a href="#" onclick="changeLanguage('en')">&#127482;&#127480; English</a>
-          <a href="#" onclick="changeLanguage('es')">&#127466;&#127480; Español</a>
-          <a href="#" onclick="changeLanguage('fr')">&#127467;&#127479; Français</a>
-          <a href="#" onclick="changeLanguage('de')">&#127465;&#127466; Deutsch</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-<script src="script.js"></script>
-  
+    <script src="script.js"></script>
+  </nav>
   
   <main>
-    <div id="main" class="header">
-      <button class="openbtn" onclick="openNav()">&#9776;</button>
+    <div class="header">
+      <button class="openbtn" onclick="openNav()">☰</button>
       <h1 class=logo>OneVote</h1>
       <img class="img1" src="MIT-Polarization-Models-01-press-removebg-preview (1) (1).png" alt="Ballot-Box">
     </div>
@@ -120,7 +57,7 @@
         </a>
       </div>
     </div>
-    </main>
+  </main>
   
 </body>
 </html>

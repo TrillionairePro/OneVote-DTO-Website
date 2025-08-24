@@ -1,9 +1,13 @@
-
 @import url(https://fonts.googleapis.com/css?family=Inter);
+
+* {
+  margin: 0;
+  padding: 0;
+}
 
 main {
   width: 1920px;
-  transition: margin-left 0.3s ease;
+  height: 1080px;
 }
 
 html {
@@ -24,10 +28,56 @@ div.page-header {
   margin-top: -33px;
 }
 
+.sidebar {
+  height: 100%; 
+  width: 0; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  background-color: #4465AC; 
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  background-color: rgba(68 ,101 ,172, 0);
+  color: white;
+  padding: 20px 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.openbtn:hover {
+  color: #8FACEB;
+}
+
 .section-1 {
   width: 640px;
   height: 680px;
-  margin-top: -40px;
   background-image: url('2024 US Presidential Election Ballot.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -36,7 +86,7 @@ div.page-header {
 .section-2 {
   width: 640px;
   height: 680px;
-  margin-top: -720px;
+  margin-top: -680px;
   margin-left: 640px;
   background-image: url('Australian Senate STV Ballot.png');
   background-size: cover;
@@ -52,7 +102,7 @@ div.page-header {
 .section-3 {
   width: 640px;
   height: 680px;
-  margin-top: -720px;
+  margin-top: -680px;
   margin-left: 1280px;
   background-image: url('New Zealand MMP Ballot.png');
   background-size: cover;
@@ -67,14 +117,14 @@ h2 {
   padding-bottom: 320px;
 }
 
+
 h1.logo {
   color: white;
   font-size: 32px;
-  padding-left: 75px;
   padding-top: 20px;
   padding-bottom: -20px;
   margin-top: -83px;
-  margin-left: 20px;
+  margin-left: 90px;
 }
 
 h2.systems {
@@ -88,27 +138,13 @@ h2.systems {
 img.img1 {
   width: 449px;
   height: 300px;
-  padding-left: 735px;
-  margin-top: -90px;
+  margin-left: 735px;
+  margin-top: -102px;
 }
 
 img.img2 {
   width: 640px;
   height: 680px;
-}
-
-.openbtn {
-  background-color: rgba(68 ,101 ,172, 0);
-  color: white;
-  padding: 20px 30px;
-  border: none;
-  cursor: pointer;
-  font-size: 40px;
-  transition: color 0.3s ease;
-}
-
-.openbtn:hover {
-  color: #ccc;
 }
 
 a:link {
@@ -118,7 +154,6 @@ a:link {
 
 div.section-1:hover {
   cursor: pointer;
-  margin-top: -40px;
   box-shadow: inset 10px 10px 10px rgba(0, 0, 0);
 }
 
@@ -130,186 +165,4 @@ div.section-2:hover {
 div.section-3:hover {
   cursor: pointer;
   box-shadow: inset 10px 10px 10px rgba(0, 0, 0);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Sidebar Styles */
-.sidebar {
-  background: linear-gradient(180deg, #4465AC 0%, #2D4A87 100%);
-  width: 0;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  overflow-y: auto;
-  transition: width 0.3s ease;
-  z-index: 1000;
-  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.sidebar.open {
-  width: 300px;
-}
-
-/* Close Button */
-.closebtn {
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  font-size: 36px;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.closebtn:hover {
-  color: #ccc;
-}
-
-/* Search Bar */
-.search-container {
-  position: relative;
-  margin: 60px 20px 30px 20px;
-}
-
-.search-bar {
-  width: 100%;
-  padding: 12px 40px 12px 15px;
-  border: none;
-  border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.9);
-  font-size: 16px;
-  color: #333;
-  outline: none;
-}
-
-.search-bar::placeholder {
-  color: #666;
-}
-
-.search-icon {
-  position: absolute;
-  right: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #666;
-  font-size: 18px;
-}
-
-/* Menu Styles */
-.menu {
-  margin-top: 20px;
-  padding: 0 10px;
-}
-
-.item {
-  margin-bottom: 5px;
-}
-
-.nav-link {
-  display: flex;
-  align-items: center;
-  padding: 15px 20px;
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 500;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-.nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  transform: translateX(5px);
-}
-
-.nav-icon {
-  margin-right: 15px;
-  font-size: 18px;
-  width: 20px;
-  text-align: center;
-}
-
-.nav-text {
-  flex: 1;
-}
-
-.dropdown-arrow {
-  margin-left: auto;
-  font-size: 12px;
-  transition: transform 0.3s ease;
-}
-
-/* Dropdown Styles */
-.dropdown-content {
-  max-height: 0;
-  overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.2);
-  margin-left: 20px;
-  margin-right: 10px;
-  border-radius: 8px;
-  transition: max-height 0.3s ease, padding 0.3s ease;
-}
-
-.dropdown-content.show {
-  max-height: 200px;
-  padding: 10px 0;
-}
-
-.dropdown-content a {
-  display: block;
-  padding: 10px 20px;
-  color: rgba(255, 255, 255, 0.8);
-  text-decoration: none;
-  font-size: 14px;
-  border-radius: 6px;
-  margin: 2px 10px;
-  transition: all 0.3s ease;
-}
-
-.dropdown-content a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: white;
-  transform: translateX(3px);
-}
-
-.dropdown.active .dropdown-arrow {
-  transform: rotate(180deg);
-}
-
-/* Language Switcher */
-.language-switcher {
-  position: absolute;
-  bottom: 20px;
-  left: 10px;
-  right: 10px;
-}
-
-.flag {
-  margin-right: 10px;
-  font-size: 16px;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .sidebar {
-    width: 0;
-  }
-  
-  .sidebar.open {
-    width: 100%;
-  }
-  
-  main {
-    margin-left: 0 !important;
-  }
 }
