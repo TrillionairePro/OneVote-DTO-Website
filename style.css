@@ -6,17 +6,18 @@
 }
 
 main {
-  width: 1920px;
+  width: 1080px;
   height: 1080px;
 }
 
 html {
   font-family: 'Inter';
   width: 1920px;
+  background-color: #303030;
 }
 
 div.header {
-  width: 1920px;
+  width: 1080px;
   height: 300px;
   background-image: linear-gradient(to right, #4465AC, #1B2946);
 }
@@ -34,32 +35,144 @@ div.page-header {
   z-index: 1; 
   top: 0;
   left: 0;
-  background-color: #4465AC; 
+  background: linear-gradient(#4465AC, #2C4A8C);
   overflow-x: hidden; 
+  overflow-y: auto;
   padding-top: 60px; 
   transition: 0.5s; 
-}
-
-.sidebar a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidebar a:hover {
-  color: #f1f1f1;
-}
+  box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+  }
 
 .sidebar .closebtn {
   position: absolute;
-  top: 0;
+  top: 15px;
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
 }
+
+.sidebar .closebtn:hover {
+  color: #8FACEB;
+}
+
+.nav-logo {
+  margin-top: -41px;
+  margin-left: 30px;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.search-container {
+  position: relative;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.search-input {
+  width: 234px;
+  height: 60px;
+  padding: 12px 40px 12px 15px;
+  border: 5px solid #8FACEB;
+  border-radius: 15px;
+  background-color: linear-gradient(to right, #FFFFFF, #2c4a8c);
+  font-family: 'Inter';
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.search-input::placeholder {
+  color: black;
+  background-color: linear-gradient(to right, #FFFFFF, #2c4a8c);
+}
+
+.search-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  font-size: 16px;
+}
+
+.nav-item {
+  font-family: 'Inter';
+  width: 234px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 20px;
+  margin-left: 30px;
+  margin-top: 25px;
+  margin-right: 30px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.home-item {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-icon {
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+.nav-text {
+  flex: 1;
+  font-weight: bold;
+}
+
+dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-arrow {
+  font-size: 12px;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-toggle {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  border: none;
+}
+
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0 0 10px 10px;
+  margin-top: 2px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.show {display:block;}
 
 .openbtn {
   background-color: rgba(68 ,101 ,172, 0);
@@ -72,6 +185,16 @@ div.page-header {
 
 .openbtn:hover {
   color: #8FACEB;
+}
+
+.closebtn {
+  font-size: 42px;
+  transform: scale(1.1);
+  color: white;
+  background-color: rgba(0,0,0,0);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
 }
 
 .section-1 {
@@ -164,4 +287,135 @@ div.section-2:hover {
 div.section-3:hover {
   cursor: pointer;
   box-shadow: inset 10px 10px 10px rgba(0, 0, 0);
+}
+
+.material-icons {
+  color: white;
+  margin-right: 10px;
+}
+
+/* One Choice Page Styles */
+.one-choice-page {
+  width: 1080px;
+  background-color: #303030;
+}
+
+.one-choice-page .page-header {
+  width: 1080px;
+  height: 100px;
+  background-color: #4465AC;
+}
+
+.page-title {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin: 0;
+}
+
+.main-content {
+  display: flex;
+  width: 1080px;
+  min-height: 600px;
+  background-color: #303030;
+}
+
+.ballot-section {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ballot-display {
+  position: relative;
+  width: 350px;
+  height: 250px;
+  margin-bottom: 30px;
+}
+
+.ballot-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.ballot-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(68, 101, 172, 0.8), rgba(44, 74, 140, 0.8));
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkmark {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #4465AC;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.vote-text {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.how-to-vote h2 {
+  color: white;
+  font-size: 36px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.info-section {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.info-card, .versions-card, .countries-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 15px;
+  border-left: 4px solid #4465AC;
+}
+
+.info-card h3, .versions-card h3, .countries-card h3 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.info-card p, .versions-card p, .countries-card p {
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  text-align: left;
 }

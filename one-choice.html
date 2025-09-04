@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta chartset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OneVote</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <div id="mySidebar" class="sidebar">
+      <button href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</button>
+      <h1 class="nav-logo">OneVote</h1>
+
+      <div class="search-container">
+        <span class="search-icon"></span>
+        <input type="text" placeholder="Search" class="search-input">
+      </div>
+
+      <a href="index.html">
+        <button class="nav-item home-item">
+          <span class="fafa-house"></span> 
+          <span class="nav-text">Home</span>
+        </button>
+      </a>
+
+      <div class="dropdown">
+        <a href="one-choice.html">
+          <button class="nav-item dropdown-toggle">
+            <span class="nav-text">One Choice</span>
+            <span class="dropdown-arrow">▼</span>
+          </button>
+        </a>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#" class="dropdown-link">What is it?</a>
+          <a href="#" class="dropdown-link">How to Vote</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="ranked.html">
+          <button class="nav-item dropdown-toggle">
+            <span class="nav-text">Ranked</span>
+            <span class="dropdown-arrow">▼</span>
+          </button>
+        </a>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#" class="dropdown-link">What is it?</a>
+          <a href="#" class="dropdown-link">How to Vote</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="mixed.html">
+          <button class="nav-item dropdown-toggle">
+            <span class="nav-text">Mixed</span>
+            <span class="dropdown-arrow">▼</span>
+          </button>
+        </a>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#" class="dropdown-link">What is it?</a>
+          <a href="#" class="dropdown-link">How to Vote</a>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </nav>
+
+  <main>
+    <div class="header">
+      <button class="openbtn" onclick="openNav()">☰</button>
+      <h1 class=logo>OneVote</h1>
+      <img class="img1" src="MIT-Polarization-Models-01-press-removebg-preview (1) (1).png" alt="Ballot-Box"></img>
+    </div>
+
+    <div class="one-choice-page">
+      <div class="page-header">
+        <h2 class="page-title">One Choice</h2>
+      </div>
+      
+      <div class="main-content">
+        <div class="ballot-section">
+          <div class="ballot-display">
+            <img src="2024 US Presidential Election Ballot.png" alt="Ballot" class="ballot-image">
+            <div class="ballot-overlay">
+              <div class="checkmark">✓</div>
+              <div class="vote-text">VOTE</div>
+            </div>
+          </div>
+          <div class="how-to-vote">
+            <h2>How to Vote</h2>
+          </div>
+        </div>
+        
+        <div class="info-section">
+          <div class="info-card">
+            <h3>What is it?</h3>
+            <p>One Choice Voting (also called Single Choice Voting) is a Voting System where a person votes for One Candidate on a ballot.</p>
+          </div>
+          
+          <div class="versions-card">
+            <h3>Versions:</h3>
+            <p><strong>First Preference Plurality (FPP)<br>
+            Proportional Representation (PR)</strong></p>
+          </div>
+          
+          <div class="countries-card">
+            <h3>Major Countries that use this system:</h3>
+            <p><strong>United Kingdom<br>
+            United States<br>
+            Canada</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </main>
+</body>
+
+</html>

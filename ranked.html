@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta chartset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OneVote</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <div id="mySidebar" class="sidebar">
+      <button href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</button>
+      <h1 class="nav-logo">OneVote</h1>
+
+      <div class="search-container">
+        <span class="search-icon"></span>
+        <input type="text" placeholder="Search" class="search-input">
+      </div>
+
+      <a href="index.html">
+        <button class="nav-item home-item">
+          <span class="fafa-house"></span> 
+          <span class="nav-text">Home</span>
+        </button>
+      </a>
+
+      <div class="dropdown">
+        <a href="one-choice.html">
+          <button class="nav-item dropdown-toggle">
+            <span class="nav-text">One Choice</span>
+            <span class="dropdown-arrow">▼</span>
+          </button>
+        </a>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#" class="dropdown-link">What is it?</a>
+          <a href="#" class="dropdown-link">How to Vote</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="ranked.html">
+          <button class="nav-item dropdown-toggle">
+            <span class="nav-text">Ranked</span>
+            <span class="dropdown-arrow">▼</span>
+          </button>
+        </a>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#" class="dropdown-link">What is it?</a>
+          <a href="#" class="dropdown-link">How to Vote</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="mixed.html">
+          <button class="nav-item dropdown-toggle">
+            <span class="nav-text">Mixed</span>
+            <span class="dropdown-arrow">▼</span>
+          </button>
+        </a>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#" class="dropdown-link">What is it?</a>
+          <a href="#" class="dropdown-link">How to Vote</a>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </nav>
+
+  <main>
+    <div class="header">
+      <button class="openbtn" onclick="openNav()">☰</button>
+      <h1 class=logo>OneVote</h1>
+      <img class="img1" src="MIT-Polarization-Models-01-press-removebg-preview (1) (1).png" alt="Ballot-Box"></img>
+    </div>
+
+    <div class="content">
+      <div class="page-header">
+        <h2 class=systems>Ranked</h2>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

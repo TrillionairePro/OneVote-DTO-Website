@@ -1,7 +1,10 @@
 function openNav() {
-  document.getElementById("mySidebar").style.width = "300px";
+  const sidebar = document.getElementById("mySidebar");
+  sidebar.style.width = "300px";
 }
 
 function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
+  const sidebar = document.getElementById("mySidebar");
+  sidebar.style.width = "0";
 }
+

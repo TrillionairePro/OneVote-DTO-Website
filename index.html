@@ -5,18 +5,65 @@
   <meta chartset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OneVote</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <nav>
     <div id="mySidebar" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#" class="NavLinks">Home</a>
-      <a href="#" class="NavLinks">One Choice</a>
-      <a href="#" class="NavLinks">Ranked</a>
-      <a href="#" class="NavLinks">Mixed</a>
+      <button href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</button>
+      <h1 class="nav-logo">OneVote</h1>
+
+      <div class="search-container">
+        <span class="search-icon"></span>
+        <input type="text" placeholder="Search" class="search-input">
+      </div>
+
+      <a href="index.html">
+        <button class="nav-item home-item">
+          <i class="material-icons">home</i>
+          <span class="nav-text">Home</span>
+        </button>
+      </a>
+
+      <div class="dropdown">
+        <a href="one-choice.html">
+          <button class="nav-item dropdown-toggle">
+            <span class="nav-text">One Choice</span>
+            <span class="dropdown-arrow">▼</span>
+          </button>
+        </a>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#" class="dropdown-link">What is it?</a>
+          <a href="#" class="dropdown-link">How to Vote</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="one-choice.html">
+          <button class="nav-item dropdown-toggle">
+            <span class="nav-text">Ranked</span>
+            <span class="dropdown-arrow">▼</span>
+          </button>
+        </a>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#" class="dropdown-link">What is it?</a>
+          <a href="#" class="dropdown-link">How to Vote</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="nav-item dropdown-toggle">
+          <span class="nav-text">Mixed</span>
+          <span class="dropdown-arrow">▼</span>
+        </button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#" class="dropdown-link">What is it?</a>
+          <a href="#" class="dropdown-link">How to Vote</a>
+        </div>
+      </div>
     </div>
     <script src="script.js"></script>
   </nav>
