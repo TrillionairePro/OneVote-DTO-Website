@@ -160,6 +160,10 @@ dropdown {
   border: none;
 }
 
+.dropdown-toggle.open {
+  border-radius: 10px 10px 0 0;
+}
+
 .dropdown-content {
   max-height: 0;
   overflow: hidden;
