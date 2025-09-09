@@ -6,8 +6,12 @@
 }
 
 main {
-  width: 1080px;
+  width: 1920px;
   height: 1080px;
+}
+
+.one-choice-html {
+  height: 2200px;
 }
 
 html {
@@ -17,7 +21,7 @@ html {
 }
 
 div.header {
-  width: 1080px;
+  width: 1920px;
   height: 300px;
   background-image: linear-gradient(to right, #4465AC, #1B2946);
 }
@@ -294,128 +298,119 @@ div.section-3:hover {
   margin-right: 10px;
 }
 
-/* One Choice Page Styles */
-.one-choice-page {
-  width: 1080px;
-  background-color: #303030;
-}
-
-.one-choice-page .page-header {
-  width: 1080px;
-  height: 100px;
-  background-color: #4465AC;
-}
-
-.page-title {
+h3 {
   color: white;
+  font-size: 30px;
+}
+
+p {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.one-choice-ballot {
+  width: 529px;
+  height: 283px;
+  border-radius: 25px;
+  background-image: url('2024 US Presidential Election Ballot.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 426px;
+  left: 79px;
+}
+
+.ocrm-image-overlay {
+  width: 529px;
+  height: 283px;
+  border-radius: 25px;
+  background: linear-gradient(to right, rgba(22, 43, 88, 0.75), rgba(147, 147, 147, 0.75));
+}
+
+.what-is-it {
+  margin-left: 678px;
+  margin-top: 92px;
+}
+
+.versions-countries {
+  text-align: right;
+  width: 619px;
+  height: 288px;
+  margin-left: 1200px;
+  margin-top: -215px;
+}
+
+.vote-header {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(68, 101, 172));
+}
+
+.vote {
+  margin: 0;
+  padding: 20px;
   font-size: 40px;
+}
+
+.step-one {
+  width: 640px;
+  height: 680px;
+}
+
+.step-header {
   text-align: center;
   padding-top: 25px;
-  padding-bottom: 25px;
-  margin: 0;
 }
 
-.main-content {
-  display: flex;
-  width: 1080px;
-  min-height: 600px;
-  background-color: #303030;
-}
-
-.ballot-section {
-  width: 50%;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.ballot-display {
-  position: relative;
-  width: 350px;
-  height: 250px;
-  margin-bottom: 30px;
-}
-
-.ballot-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 15px;
-}
-
-.ballot-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, rgba(68, 101, 172, 0.8), rgba(44, 74, 140, 0.8));
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.checkmark {
-  width: 60px;
-  height: 60px;
+.step-square {
+  width: 500px;
+  height: 400px;
+  border-radius: 25px;
   background-color: white;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  color: #4465AC;
-  font-weight: bold;
-  margin-bottom: 20px;
+  margin: auto;
+  margin-top: 20px;
 }
 
-.vote-text {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  padding: 10px 25px;
-  border-radius: 5px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.how-to-vote h2 {
-  color: white;
-  font-size: 36px;
+.step-text {
   text-align: center;
-  margin: 0;
-  padding: 0;
+  margin-top: 20px;
+  font-size: 30px;
 }
 
-.info-section {
-  width: 50%;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 30px;
+.step-two {
+  width: 640px;
+  height: 680px;
+  margin-left: 640px;
+  margin-top: -680px;
 }
 
-.info-card, .versions-card, .countries-card {
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: 25px;
-  border-radius: 15px;
-  border-left: 4px solid #4465AC;
+.step-three {
+  width: 640px;
+  height: 680px;
+  margin-left: 1280px;
+  margin-top: -680px;
 }
 
-.info-card h3, .versions-card h3, .countries-card h3 {
-  color: white;
-  font-size: 24px;
-  margin-bottom: 15px;
-  text-align: left;
+.step-four {
+  width: 640px;
+  height: 680px;
+  margin-left: 325px;
 }
 
-.info-card p, .versions-card p, .countries-card p {
-  color: white;
-  font-size: 16px;
-  line-height: 1.6;
-  margin: 0;
-  text-align: left;
+.step-five {
+  width: 640px;
+  height: 680px;
+  margin-left: 970px;
+  margin-top: -680px;
+}
+
+.ranked-ballot {
+  width: 529px;
+  height: 283px;
+  border-radius: 25px;
+  background-image: url('Australian Senate STV Ballot.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 426px;
+  left: 79px;
 }
