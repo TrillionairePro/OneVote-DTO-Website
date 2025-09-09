@@ -16,19 +16,16 @@ function toggleDropdown(dropdownId) {
     dropdown.style.maxHeight = "0";
     arrow.style.transform = "rotate(0deg)";
   } else {
-    // Close all other dropdowns first
     const allDropdowns = document.querySelectorAll('.dropdown-content');
     const allArrows = document.querySelectorAll('.dropdown-arrow');
     allDropdowns.forEach(dd => dd.style.maxHeight = "0");
     allArrows.forEach(arr => arr.style.transform = "rotate(0deg)");
-    
-    // Open the clicked dropdown
+
     dropdown.style.maxHeight = "200px";
     arrow.style.transform = "rotate(180deg)";
   }
 }
 
-// Close dropdowns when clicking outside
 document.addEventListener('click', function(event) {
   if (!event.target.closest('.dropdown')) {
     const allDropdowns = document.querySelectorAll('.dropdown-content');

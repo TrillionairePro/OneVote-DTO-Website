@@ -176,6 +176,10 @@ dropdown {
   display: block;
 }
 
+.dropdown-link:visited {
+  color: white;
+}
+
 .show {display:block;}
 
 .openbtn {
