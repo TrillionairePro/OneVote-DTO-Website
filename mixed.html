@@ -29,41 +29,35 @@
       </a>
 
       <div class="dropdown">
-        <a href="one-choice.html">
-          <button class="nav-item dropdown-toggle">
-            <span class="nav-text">One Choice</span>
-            <span class="dropdown-arrow">▼</span>
-          </button>
-        </a>
-        <div id="myDropdown" class="dropdown-content">
-          <a href="#" class="dropdown-link">What is it?</a>
-          <a href="#" class="dropdown-link">How to Vote</a>
+        <button class="nav-item dropdown-toggle" onclick="toggleDropdown('oneChoiceDropdown')">
+          <span class="nav-text">One Choice</span>
+          <span class="dropdown-arrow">▼</span>
+        </button>
+        <div id="oneChoiceDropdown" class="dropdown-content">
+          <a href="one-choice.html#what-is-it" class="dropdown-link">What is it?</a>
+          <a href="one-choice.html#how-to-vote" class="dropdown-link">How to Vote</a>
         </div>
       </div>
 
       <div class="dropdown">
-        <a href="ranked.html">
-          <button class="nav-item dropdown-toggle">
-            <span class="nav-text">Ranked</span>
-            <span class="dropdown-arrow">▼</span>
-          </button>
-        </a>
-        <div id="myDropdown" class="dropdown-content">
-          <a href="#" class="dropdown-link">What is it?</a>
-          <a href="#" class="dropdown-link">How to Vote</a>
+        <button class="nav-item dropdown-toggle" onclick="toggleDropdown('rankedDropdown')">
+          <span class="nav-text">Ranked</span>
+          <span class="dropdown-arrow">▼</span>
+        </button>
+        <div id="rankedDropdown" class="dropdown-content">
+          <a href="ranked.html#what-is-it" class="dropdown-link">What is it?</a>
+          <a href="ranked.html#how-to-vote" class="dropdown-link">How to Vote</a>
         </div>
       </div>
 
       <div class="dropdown">
-        <a href="mixed.html">
-          <button class="nav-item dropdown-toggle">
-            <span class="nav-text">Mixed</span>
-            <span class="dropdown-arrow">▼</span>
-          </button>
-        </a>
-        <div id="myDropdown" class="dropdown-content">
-          <a href="#" class="dropdown-link">What is it?</a>
-          <a href="#" class="dropdown-link">How to Vote</a>
+        <button class="nav-item dropdown-toggle" onclick="toggleDropdown('mixedDropdown')">
+          <span class="nav-text">Mixed</span>
+          <span class="dropdown-arrow">▼</span>
+        </button>
+        <div id="mixedDropdown" class="dropdown-content">
+          <a href="mixed.html#what-is-it" class="dropdown-link">What is it?</a>
+          <a href="mixed.html#how-to-vote" class="dropdown-link">How to Vote</a>
         </div>
       </div>
     </div>
@@ -87,7 +81,7 @@
       <div class="ocrm-image-overlay"></div>
     </div>
 
-    <div class="what-is-it">
+    <div class="what-is-it" id="what-is-it">
       <h3>What is it?</h3><br>
       <p>One Choice Voting is a Voting System where<br> a person ranks candidates in their prefered <br>order on a ballot.</p>
     </div>
@@ -103,7 +97,7 @@
       Malta</p>
     </div>
 
-    <div class="vote-header">
+    <div class="vote-header" id="how-to-vote">
       <h2 class="vote">How to Vote</h2>
     </div>
 

@@ -29,39 +29,35 @@
       </a>
 
       <div class="dropdown">
-        <a href="one-choice.html">
-          <button class="nav-item dropdown-toggle" onclick="myFunction()">
-            <span class="nav-text">One Choice</span>
-            <span class="dropdown-arrow">▼</span>
-          </button>
-        </a>
-        <div id="myDropdown" class="dropdown-content">
-          <a href="#" class="dropdown-link">What is it?</a>
-          <a href="#" class="dropdown-link">How to Vote</a>
+        <button class="nav-item dropdown-toggle" onclick="toggleDropdown('oneChoiceDropdown')">
+          <span class="nav-text">One Choice</span>
+          <span class="dropdown-arrow">▼</span>
+        </button>
+        <div id="oneChoiceDropdown" class="dropdown-content">
+          <a href="one-choice.html#what-is-it" class="dropdown-link">What is it?</a>
+          <a href="one-choice.html#how-to-vote" class="dropdown-link">How to Vote</a>
         </div>
       </div>
 
       <div class="dropdown">
-        <a href="one-choice.html">
-          <button class="nav-item dropdown-toggle" onclick="myFunction()">
-            <span class="nav-text">Ranked</span>
-            <span class="dropdown-arrow">▼</span>
-          </button>
-        </a>
-        <div id="myDropdown" class="dropdown-content">
-          <a href="#" class="dropdown-link">What is it?</a>
-          <a href="#" class="dropdown-link">How to Vote</a>
+        <button class="nav-item dropdown-toggle" onclick="toggleDropdown('rankedDropdown')">
+          <span class="nav-text">Ranked</span>
+          <span class="dropdown-arrow">▼</span>
+        </button>
+        <div id="rankedDropdown" class="dropdown-content">
+          <a href="ranked.html#what-is-it" class="dropdown-link">What is it?</a>
+          <a href="ranked.html#how-to-vote" class="dropdown-link">How to Vote</a>
         </div>
       </div>
 
       <div class="dropdown">
-        <button class="nav-item dropdown-toggle" onclick="myFunction()">
+        <button class="nav-item dropdown-toggle" onclick="toggleDropdown('mixedDropdown')">
           <span class="nav-text">Mixed</span>
           <span class="dropdown-arrow">▼</span>
         </button>
-        <div id="myDropdown" class="dropdown-content">
-          <a href="#" class="dropdown-link">What is it?</a>
-          <a href="#" class="dropdown-link">How to Vote</a>
+        <div id="mixedDropdown" class="dropdown-content">
+          <a href="mixed.html#what-is-it" class="dropdown-link">What is it?</a>
+          <a href="mixed.html#how-to-vote" class="dropdown-link">How to Vote</a>
         </div>
       </div>
     </div>
