@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OneVote</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -23,7 +23,7 @@
 
       <a href="index.html">
         <button class="nav-item home-item">
-          <span class="fafa-house"></span> 
+          <i class="material-icons">home</i>
           <span class="nav-text">Home</span>
         </button>
       </a>
@@ -64,7 +64,7 @@
     <script src="script.js"></script>
   </nav>
 
-  <main class="one-choice-html">
+  <main>
     <div class="header">
       <button class="openbtn" onclick="openNav()">☰</button>
       <h1 class=logo>OneVote</h1>
@@ -73,62 +73,57 @@
 
     <div class="content">
       <div class="page-header">
-        <h2 class=systems>Ranked</h2>
+        <h2 class=systems>Mixed</h2>
       </div>
     </div>
 
-    <div class=ranked-ballot>
+    <div class=mixed-ballot>
       <div class="ocrm-image-overlay"></div>
     </div>
 
     <div class="what-is-it" id="what-is-it">
       <h3>What is it?</h3><br>
-      <p>One Choice Voting is a Voting System where<br> a person ranks candidates in their prefered <br>order on a ballot.</p>
+      <p>Mixed Voting is a Voting System where<br> a person votes two times; one for their <br>prefered candidate, and one for their <br>prefered party.</p>
     </div>
 
     <div class="versions-countries">
       <h3>Versions:</h3><br>
-      <p>Instant-Runoff Voting (IRV)<br>
-      Single Transferable Vote (STV)</p><br>
+      <p>Mixed Member Proportional (MMP)<br>
+      Additional Member System (AMS)</p><br>
 
       <h3>Major Countries that use this system:</h3><br>
-      <p>Australia<br>
-      Ireland<br>
-      Malta</p>
+      <p>New Zealand<br>
+      Germany<br>
+      Bolivia</p>
     </div>
 
     <div class="vote-header" id="how-to-vote">
       <h2 class="vote">How to Vote</h2>
     </div>
 
-    <div class="step-one">
-      <h3 class="step-header">Step 1</h3>
-      <div class="step-square"></div>
-      <p class="step-text">Take a Ballot and go into a <br> vacant Voting Booth</p>
-    </div>
-
-    <div class="step-two">
-      <h3 class="step-header">Step 2</h3>
-      <div class="step-square"></div>
-      <p class="step-text">Look at your ballot. <br>On it will be a list of names of <br>the candidates running for your electorate/division.</p>
-    </div>
-
-    <div class="step-three">
-      <h3 class="step-header">Step 3</h3>
-      <div class="step-square"></div>
-      <p class="step-text">Rank the candidates in the order of <br>your preference.</p>
-    </div>
-
-    <div class="step-four">
-      <h3 class="step-header">Step 4</h3>
-      <div class="step-square"></div>
-      <p class="step-text">Do not give the same ranking to <br>multiple candidates, and do not skip <br>rankings. If you make a mistake, take <br>your ‘spoiled’ ballot back to an <br>election official and ask for a new one.</p>
-    </div>
-
-    <div class="step-five">
-      <h3 class="step-header">Step 5</h3>
-      <div class="step-square"></div>
-      <p class="step-text">Once you have marked your ballot, fold your ballot paper in half, exit the booth, and drop it into  into the ballot box. </p>
+    <div class="container">
+      <div class="cards-wrapper">
+        <div class="card card-mixed">
+          <h3 class="h-step">Step 1</h3>
+          <p class="p-step">Take a Ballot and go into a vacant Voting Booth.</p>
+        </div>
+        <div class="card card-mixed">
+          <h3 class="h-step">Step 2</h3>
+          <p class="p-step">Look at your ballot. On the left will be a list of parties. On the right will be a list of names of the candidates running for your electorate.</p>
+        </div>
+        <div class="card card-mixed">
+          <h3 class="h-step">Step 3</h3>
+          <p class="p-step">On the left, place a single tick next to the party you want to vote for. On the right, place a single tick in the box next to the name of the candidate you want to vote for.</p>
+        </div>
+        <div class="card card-mixed">
+          <h3 class="h-step">Step 4</h3>
+          <p class="p-step">Make sure to only tick one candidate and one party. If you make a mistake, take your ‘spoiled’ ballot back to an election official and ask for a new one.</p>
+        </div>
+        <div class="card card-mixed">
+          <h3 class="h-step">Step 5</h3>
+          <p class="p-step">Once you have marked your ballot, fold your ballot paper in half, exit the booth, and drop it into the ballot box.</p>
+        </div>
+      </div>
     </div>
 
   </main>

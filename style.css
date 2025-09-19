@@ -10,10 +10,6 @@ main {
   height: 1080px;
 }
 
-.one-choice-html {
-  height: 2200px;
-}
-
 html {
   font-family: 'Inter';
   width: 1920px;
@@ -43,7 +39,7 @@ div.page-header {
   overflow-x: hidden; 
   overflow-y: auto;
   padding-top: 60px; 
-  transition: 0.5s; 
+  transition: 1s;
   box-shadow: 2px 0 10px rgba(0,0,0,0.3);
   }
 
@@ -55,7 +51,7 @@ div.page-header {
   margin-left: 50px;
   color: white;
   text-decoration: none;
-  transition: 0.3s;
+  transition: 1s;
 }
 
 .sidebar .closebtn:hover {
@@ -183,11 +179,21 @@ dropdown {
   display: block;
 }
 
+.dropdown-link {
+  font-weight: bold;
+}
+
+.dropdown-link:hover {
+  color: rgba(255, 255, 255, 0.5)
+}
+
 .dropdown-link:visited {
   color: white;
 }
 
-.show {display:block;}
+.show {
+  display:block;
+}
 
 .openbtn {
   background-color: rgba(68 ,101 ,172, 0);
@@ -362,58 +368,6 @@ p {
   font-size: 40px;
 }
 
-.step-one {
-  width: 640px;
-  height: 680px;
-}
-
-.step-header {
-  text-align: center;
-  padding-top: 25px;
-}
-
-.step-square {
-  width: 500px;
-  height: 400px;
-  border-radius: 25px;
-  background-color: white;
-  margin: auto;
-  margin-top: 20px;
-}
-
-.step-text {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 30px;
-}
-
-.step-two {
-  width: 640px;
-  height: 680px;
-  margin-left: 640px;
-  margin-top: -680px;
-}
-
-.step-three {
-  width: 640px;
-  height: 680px;
-  margin-left: 1280px;
-  margin-top: -680px;
-}
-
-.step-four {
-  width: 640px;
-  height: 680px;
-  margin-left: 325px;
-}
-
-.step-five {
-  width: 640px;
-  height: 680px;
-  margin-left: 970px;
-  margin-top: -680px;
-}
-
 .ranked-ballot {
   width: 529px;
   height: 283px;
@@ -424,4 +378,60 @@ p {
   position: absolute;
   top: 426px;
   left: 79px;
+}
+
+.mixed-ballot {
+  width: 529px;
+  height: 283px;
+  border-radius: 25px;
+  background-image: url('New Zealand MMP Ballot.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 426px;
+  left: 79px;
+}
+
+.container {
+  position: relative;
+  max-width: 100%;
+  padding-left: 50px;
+}
+
+.cards-wrapper {
+  display: flex;
+  gap: 60px;
+  padding: 100px;
+  padding-top: 50px;
+}
+
+.card {
+  flex: 0 0 auto; 
+  width: 250px;
+  height: 250px;
+  border-radius: 25px;
+  background-color: #4465AC;
+  padding: 20px;
+  box-shadow: 5px 5px rgba(255, 255, 255, 0.075);
+  font-family: 'Inter';
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card-ranked {
+  height: 295px;
+}
+
+.card-mixed {
+  height: 275px;
+}
+
+.h-step {
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+
+.p-step {
+  font-size: 22.5px;
 }

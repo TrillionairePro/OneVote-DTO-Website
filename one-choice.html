@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OneVote</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -23,7 +23,7 @@
 
       <a href="index.html">
         <button class="nav-item home-item">
-          <span class="fafa-house"></span> 
+          <i class="material-icons">home</i>
           <span class="nav-text">Home</span>
         </button>
       </a>
@@ -64,7 +64,7 @@
     <script src="script.js"></script>
   </nav>
 
-  <main class="one-choice-html">
+  <main>
     <div class="header">
       <button class="openbtn" onclick="openNav()">☰</button>
       <h1 class=logo>OneVote</h1>
@@ -101,34 +101,29 @@
       <h2 class="vote">How to Vote</h2>
     </div>
 
-    <div class="step-one">
-      <h3 class="step-header">Step 1</h3>
-      <div class="step-square"></div>
-      <p class="step-text">Take a Ballot and go into a <br> vacant Voting Booth</p>
-    </div>
-
-    <div class="step-two">
-      <h3 class="step-header">Step 2</h3>
-      <div class="step-square"></div>
-      <p class="step-text">Look at your ballot. <br>On it will be a list of names of <br>the candidates running for your electorate/division.</p>
-    </div>
-
-    <div class="step-three">
-      <h3 class="step-header">Step 3</h3>
-      <div class="step-square"></div>
-      <p class="step-text">Place a single tick/cross <br>in the box next to the name of the <br>candidate you want to vote for.</p>
-    </div>
-
-    <div class="step-four">
-      <h3 class="step-header">Step 4</h3>
-      <div class="step-square"></div>
-      <p class="step-text">Make sure to only tick one candidate.<br>If you make a mistake, take your<br>‘spoiled’ ballot back to an election<br>official and ask for a new one.</p>
-    </div>
-
-    <div class="step-five">
-      <h3 class="step-header">Step 5</h3>
-      <div class="step-square"></div>
-      <p class="step-text">Once you have marked your ballot, fold your ballot paper in half, exit the booth, and drop it into  into the ballot box. </p>
+    <div class="carousel-container">
+      <div class="cards-wrapper">
+        <div class="card">
+          <h3 class="h-step">Step 1</h3>
+          <p class="p-step">Take a Ballot and go into a vacant Voting Booth.</p>
+        </div>
+        <div class="card">
+          <h3 class="h-step">Step 2</h3>
+          <p class="p-step">Look at your ballot. On it will be a list of names of the candidates running for your electorate.</p>
+        </div>
+        <div class="card">
+          <h3 class="h-step">Step 3</h3>
+          <p class="p-step">Place a single tick in the box next to the name of the candidate you want to vote for.</p>
+        </div>
+        <div class="card">
+          <h3 class="h-step">Step 4</h3>
+          <p class="p-step">Make sure to only tick one candidate. If you make a mistake, take your ‘spoiled’ ballot back to an election official and ask for a new one.</p>
+        </div>
+        <div class="card">
+          <h3 class="h-step">Step 5</h3>
+          <p class="p-step">Once you have marked your ballot, fold your ballot paper in half, exit the booth, and drop it into the ballot box.</p>
+        </div>
+      </div>
     </div>
     
   </main>
