@@ -180,7 +180,7 @@ dropdown {
   display: block;
 }
 
-.dropdown-toggle.open .dropdown-content {
+.dropdown-toggle.open + .dropdown-content {
   max-height: 200px; 
 }
 
