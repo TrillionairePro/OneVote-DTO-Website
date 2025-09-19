@@ -435,3 +435,22 @@ p {
 .p-step {
   font-size: 22.5px;
 }
+
+.dropdown-content {
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.dropdown-arrow {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.dropdown-toggle.open + .dropdown-content {
+  max-height: 200px; 
+}
+
+.dropdown-toggle.open .dropdown-arrow {
+  transform: rotate(180deg);
+}
