@@ -16,6 +16,7 @@ function toggleDropdown(dropdownId) {
   if (dropdown.style.maxHeight === "200px") {
     dropdown.style.maxHeight = "0";
     arrow.style.transform = "rotate(0deg)";
+    button.classList.remove('open');
   }
   
   else {
