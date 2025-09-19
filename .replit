@@ -26,7 +26,7 @@ Console logs are available in the Preview devtools or your browser devtools.\" &
 waitForPort = 80
 
 [[ports]]
-localPort = 80
+localPort = 8
 externalPort = 80
 
 [agent]
